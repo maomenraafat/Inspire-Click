@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quotes App</title>
+
+    <link
+      rel="shortcut icon"
+      href="images/icons8-quote-64.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header py-4 vh-100 bg-primary-subtle bg-gradient">
+      <div class="container p-4 mt-5 text-center">
+        <h1 class="display-2 fw-bolder mb-4 text-primary">Quote of the Day</h1>
+        <p class="mb-2 fs-3 text-primary">
+          Press the button below to recieve a random quote!
+        </p>
+        <div>
+          <i class="fa-solid fa-quote-left display-3 mb-3 text-primary"></i>
+        </div>
+
+        <blockquote class="blockquote" cite="https://www.goodreads.com/quotes">
+          <p id="quote-text" class="fw-semibold fs-3"></p>
+        </blockquote>
+
+        <div class="blockquote-footer">
+          <p id="author" class="fw-semibold fs-3"></p>
+          <cite title="Source Title">goodreads.com</cite>
+        </div>
+        
+        <div>
+          <i class="fa-solid fa-quote-left display-3 mb-3 text-primary"></i>
+        </div>
+        <button
+          onclick="generateQuote();"
+          class="btn btn-lg btn-outline-primary"
+        >
+          New Quote
+        </button>
+      </div>
+    </header>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
